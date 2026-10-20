@@ -1,33 +1,33 @@
-# Pneumonia Detection Using Deep Learning
+# Pneumonia Detection Using Machine Learning
 
 ## Project Overview
 
-This project investigates the use of Deep Learning and Computer Vision techniques for the automated detection of pneumonia from chest X-ray images.
+This project explores the use of Machine Learning techniques to classify chest X-ray data and identify cases of pneumonia.
 
-Pneumonia is a serious respiratory condition that can be identified through medical imaging. The aim of this project was to develop and evaluate a machine learning model capable of classifying chest X-ray scans as either Pneumonia or Normal.
+The aim of the project was to investigate how different machine learning algorithms perform when applied to a healthcare classification problem. The project followed a complete machine learning workflow, including data preprocessing, feature preparation, model training, evaluation, and performance comparison.
 
-The project demonstrates the complete machine learning workflow, including data preprocessing, exploratory analysis, model development, training, evaluation, and performance assessment.
+By comparing multiple algorithms, the project provides insight into the strengths and limitations of different classification approaches for medical diagnosis tasks.
 
 ---
 
 ## Objectives
 
-- Preprocess and prepare chest X-ray image data for analysis.
-- Develop a deep learning model for pneumonia detection.
-- Train and optimise the model using labelled medical images.
-- Evaluate classification performance using appropriate metrics.
-- Investigate the effectiveness of AI techniques in medical image analysis.
+- Prepare and preprocess data for machine learning analysis.
+- Develop and evaluate multiple classification models.
+- Compare the performance of different algorithms.
+- Identify the most effective model for pneumonia prediction.
+- Assess model performance using appropriate evaluation metrics.
 
 ---
 
 ## Dataset
 
-The project uses a chest X-ray image dataset containing labelled images belonging to two classes:
+The dataset contains labelled instances representing two classes:
 
 - Normal
 - Pneumonia
 
-Images were processed and prepared before being used to train the neural network model.
+Data preprocessing techniques were applied to prepare the dataset for machine learning modelling and ensure consistent model performance.
 
 ---
 
@@ -35,48 +35,123 @@ Images were processed and prepared before being used to train the neural network
 
 - Python
 - Jupyter Notebook
-- TensorFlow
-- Keras
-- NumPy
 - Pandas
+- NumPy
 - Matplotlib
 - Seaborn
 - Scikit-learn
 
 ---
 
+## Machine Learning Models
+
+Several machine learning classification algorithms were developed and evaluated, including:
+
+### Logistic Regression
+A baseline classification model used to establish benchmark performance.
+
+### Decision Tree
+A tree-based classifier that provides interpretable decision rules and feature-based predictions.
+
+### Random Forest
+An ensemble learning method that combines multiple decision trees to improve prediction accuracy and reduce overfitting.
+
+### K-Nearest Neighbours (KNN)
+A distance-based algorithm that classifies observations according to the closest training examples.
+
+### Support Vector Machine (SVM)
+A powerful classifier that identifies the optimal decision boundary between classes.
+
+### Naive Bayes
+A probabilistic classification model based on Bayes' Theorem.
+
+---
+
 ## Machine Learning Workflow
 
 ### 1. Data Preparation
-- Image loading and preprocessing
+- Data loading
 - Data cleaning
-- Resizing and normalisation
-- Dataset splitting
+- Handling missing values
+- Feature selection
+- Feature scaling and transformation
 
-### 2. Model Development
-- Convolutional Neural Network (CNN) architecture
-- Model compilation and configuration
-- Hyperparameter selection
+### 2. Exploratory Data Analysis
+- Dataset exploration
+- Statistical summaries
+- Visualisation of patterns and distributions
 
-### 3. Training
-- Neural network training
-- Performance monitoring
-- Validation analysis
+### 3. Model Development
+- Training multiple machine learning models
+- Hyperparameter tuning
+- Cross-validation
 
-### 4. Evaluation
-- Accuracy assessment
-- Loss analysis
-- Confusion matrix
-- Classification metrics
+### 4. Model Evaluation
+Models were assessed using performance metrics such as:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+### 5. Model Comparison
+Model performance was compared to identify the most effective classifier for pneumonia prediction.
 
 ---
 
 ## Results
 
-The trained model successfully learned patterns from chest X-ray images and demonstrated the ability to distinguish between normal and pneumonia cases.
+The project demonstrated how different machine learning algorithms perform on a healthcare classification task.
 
-Performance was evaluated using standard classification metrics, enabling assessment of the model's effectiveness and potential application within medical image classification tasks.
+Model evaluation highlighted the trade-offs between predictive performance, interpretability, and computational efficiency. The comparison enabled identification of the most suitable algorithm for detecting pneumonia within the dataset.
+
+---
+
+## Key Skills Demonstrated
+
+- Machine Learning
+- Classification Modelling
+- Predictive Analytics
+- Healthcare Data Analysis
+- Data Preprocessing
+- Feature Engineering
+- Performance Evaluation
+- Data Visualisation
+- Python Programming
 
 ---
 
 ## Repository Structure
+
+```
+Pneumonia-Detection-Project/
+│
+├── Pneumonia_Detection.ipynb
+├── README.md
+├── datasets/
+├── outputs/
+└── visualisations/
+```
+
+---
+
+## Author
+
+**Kian Naidoo**
+
+BSc Data Science
+
+Manchester Metropolitan University
+
+GitHub: https://github.com/kiannaidoo24793951
+
+---
+
+## Future Improvements
+
+- Perform additional hyperparameter optimisation.
+- Explore ensemble learning techniques.
+- Increase dataset size and diversity.
+- Evaluate feature importance.
+- Develop a deployment-ready prediction application.
